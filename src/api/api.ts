@@ -54,7 +54,7 @@ export const api = createApi({
         url: `tickets/${ticketId}/take-to-work`,
         method: 'POST',
       }),
-      invalidatesTags: [{ type: 'Tickets', id: 'LIST' }], // обновляет список
+      invalidatesTags: [{ type: 'Tickets', id: 'LIST' }], 
     }),
 
     closeTicket: build.mutation<void, number>({
@@ -62,22 +62,22 @@ export const api = createApi({
         url: `tickets/${ticketId}/close`,
         method: 'POST',
       }),
-      invalidatesTags: [{ type: 'Tickets', id: 'LIST' }], // обновляет список
+      invalidatesTags: [{ type: 'Tickets', id: 'LIST' }], 
     }),
     getWorkspaces: build.query<Workspaces[], void>({
       query: () => 'workspaces',
       providesTags: [{ type: 'Workspaces', id: 'LIST' }],
     }),
     createWorkspace: build.mutation<
-      void, // сервер просто возвращает 200
-      { name: string } // тело запроса
+      void,
+      { name: string } 
     >({
       query: (body) => ({
         url: `workspaces`,
         method: 'POST',
         body,
       }),
-      invalidatesTags: [{ type: 'Workspaces', id: 'LIST' }], // обновит список после создания
+      invalidatesTags: [{ type: 'Workspaces', id: 'LIST' }],
     }),
   }),
 })
