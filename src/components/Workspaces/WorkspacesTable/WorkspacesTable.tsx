@@ -28,13 +28,11 @@ export const WorkspacesTable: React.FC<WorkspacesTableProps> = ({ data, isLoadin
                 <Text type="tertiary">Нет данных</Text>
             }
             onRow={(record) => {
-                // record иногда может быть undefined в типах, поэтому безопасно проверяем
                 if (!record) return {};
                 return {
                     onClick: () => {
                         navigate(`/workspaces/${record.id}`);
                     },
-                    // Semi Table ожидает только обработчики, но inline style можно задать через rowClassName/rowStyle — оставлено для примера
                     style: { cursor: "pointer" } as React.CSSProperties,
                 };
             }}

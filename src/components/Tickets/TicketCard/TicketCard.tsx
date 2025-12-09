@@ -17,7 +17,6 @@ export const TicketCard: React.FC<TicketProps> = ({ tickets }) => {
   return (
     <>
       {tickets.map((ticket) => {
-        // TODO: убрать адовы стили из map
         const highlighterStyle = `${styles.highlighter} ${highlighterStyles[ticket.status]}`;
         const ticketImportantStyle = `${styles.ticketImportant} ${importantStatusStyles[ticket.status]}`;
 

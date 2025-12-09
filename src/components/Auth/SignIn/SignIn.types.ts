@@ -22,9 +22,9 @@ export const validateRulesPswd: RuleItem[] = [
   {
     validator: (_, value) => {
       if (!value) {
-        return false; // поле пустое
+        return false; 
       }
-      return value.length >= 4; // длина >= 4
+      return value.length >= 4; 
     },
     message: "Пароль должен быть не пустым и минимум 4 символа",
   },
