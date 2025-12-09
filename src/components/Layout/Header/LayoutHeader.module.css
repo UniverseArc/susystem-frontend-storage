@@ -1,0 +1,38 @@
+/* Header div */
+.headerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--semi-color-border);
+  background: var(--semi-color-bg-0);
+}
+
+.headerLeft {
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.headerSubtitle {
+  color: #6B7280;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.headerCenter {
+  flex: 1;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.userNameClickable {
+    cursor: pointer;
+    user-select: none;
+}

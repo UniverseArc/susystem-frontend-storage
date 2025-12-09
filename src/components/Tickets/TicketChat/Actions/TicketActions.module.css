@@ -1,0 +1,21 @@
+.filtersContainer {
+  width: 240px;
+  padding: 32px;
+  overflow-y: auto;
+  border-left: 1px solid var(--color-border-primary);
+  background: var(--color-surface-primary);
+}
+
+.filtersSet {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/*TODO: дублируется во многих местах, сделать более универсальным*/
+.ticketTitle {
+    font-weight: bold;
+    margin: 0 0 12px 0;
+    font-size: 18px;
+    line-height: 28px;
+}

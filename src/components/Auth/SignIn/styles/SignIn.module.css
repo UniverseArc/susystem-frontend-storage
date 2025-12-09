@@ -1,0 +1,109 @@
+/* ---------- Form ---------- */
+
+.wrapperForm {
+  width: 80vw; /* можно менять медиа-запросами */
+  max-width: 450px;
+  aspect-ratio: 1 / 1;
+  border-radius: 0.5rem; /* 8px */
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.formWelcome {
+  color: #111827;
+  font-size: 1.5rem;
+  font-weight: 550;
+}
+
+.formPlease {
+  color: #6B7280;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.formNewbie {
+  color: #6B7280;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}
+
+.wrapInputs{
+  width: 100%;
+}
+
+.wrapInputsAndButton {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 360px;
+  margin: 2rem auto 0 auto;
+}
+
+.inputField {
+  width: 100%;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  color: #111827;
+  outline: none;
+  border: 1px solid #ccc;
+
+  /* placeholder */
+}
+
+.inputField::placeholder {
+  color: #9CA3AF;
+}
+
+.inputField:hover {
+  border-color: #93C5FD;
+}
+
+.inputField:focus {
+  border-color: #2563EB;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.loginButton {
+  width: 100%;
+  background-color: #2F80ED;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: none;
+  margin-top: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.loginButton:hover {
+  background-color: #1E6FDB;
+}
+
+.loginButton:active {
+  background-color: #1A5EC4;
+}
+
+/* ---------- Media Queries ---------- */
+@media (min-width: 600px) {
+  .wrapperForm {
+    width: 400px;
+  }
+}
+
+@media (min-width: 900px) {
+  .wrapperForm {
+    width: 450px;
+  }
+}

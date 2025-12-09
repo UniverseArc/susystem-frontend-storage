@@ -1,0 +1,5 @@
+export { TicketsMain } from "./TicketsMain/TicketsMain"
+export { TicketChat } from "./TicketChat/TicketChat"
+export { TicketInput } from "./TicketChat/Input/TicketInput"
+export { TicketCard } from "./TicketCard/TicketCard"
+export { TicketsStatuses } from "./TicketsStatuses/TicketsStatuses"

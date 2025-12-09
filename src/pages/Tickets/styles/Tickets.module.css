@@ -1,0 +1,15 @@
+/* .pageContainer {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+      "nav header"
+      "nav main";
+} */
+
+/* .pageNav {
+  grid-area: nav;
+  background: var(--color-surface-quaternary);
+} */

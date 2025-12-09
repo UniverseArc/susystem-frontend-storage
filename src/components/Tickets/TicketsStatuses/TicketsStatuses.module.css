@@ -1,0 +1,18 @@
+.checkboxLabel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.checkboxSpan {
+    user-select: none;
+    color: black;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.selectWrapper{
+    margin-bottom: 1rem;
+}

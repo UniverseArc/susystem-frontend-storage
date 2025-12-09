@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    container_name: vite_react_app
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app:cached       # монтируем код
+      - /usr/src/app/node_modules   # node_modules остаются в контейнере
+    ports:
+      - "5173:5173"
+    environment:
+      - CHOKIDAR_USEPOLLING=true    # для Windows HMR через Docker
+    command: yarn dev --host

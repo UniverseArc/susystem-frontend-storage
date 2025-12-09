@@ -1,0 +1,70 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #F9FAFB;
+  color: #111827;
+  font-synthesis: none;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --color-danger-primary: #e74c3c;
+  --color-danger-secondary: #ff7665;
+  --color-danger-background: #ffeaea;
+  --color-danger-foreground: #7f1d1d;
+
+  --color-success-primary: #27ae60;
+  --color-success-secondary: #58d68d;
+  --color-success-background: #beffe5;
+  --color-success-foreground: #145a32;
+
+  --color-warning-primary: #f1c40f;
+  --color-warning-secondary: #f7dc6f;
+  --color-warning-background: #fef9e7;
+  --color-warning-foreground: #7d6608;
+
+  --color-accent-primary: #3498db;
+  --color-accent-secondary: #5dade2;
+  --color-accent-background: #ebf5fb;
+  --color-accent-foreground: #1b4f72;
+
+  --color-border-primary: #ccc;
+
+  --color-surface-primary: #ffffff;
+  --color-surface-secondary: #f8f8f8;
+  --color-surface-tertiary: #e0e0e0;
+  --color-surface-quaternary: #1e1e2d;
+}
+
+#root {
+  width: 100dvw;
+  height: 100dvh;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-size: 1rem;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+  transition: background-color 9999s ease-in-out 0s;
+  -webkit-text-fill-color: #111827 !important;
+  box-shadow: 0 0 0px 1000px white inset !important;
+}
